@@ -20,6 +20,3 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/xiaomi/cereus/full_cereus.mk)
 
 PRODUCT_NAME := omni_cereus
-
-PRODUCT_COPY_FILES += \
-    device/xiaomi/cereus/recovery.fstab:recovery/root/recovery.fstab
