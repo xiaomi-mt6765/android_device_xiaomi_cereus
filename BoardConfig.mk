@@ -37,22 +37,17 @@ BOARD_RAMDISK_OFFSET := 0x15000000
 BOARD_TAGS_OFFSET := 0x14000000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive androidboot.configfs=true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
-TARGET_PREBUILT_KERNEL := device/xiaomi/cactus/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/xiaomi/cereus/prebuilt/kernel
 
 # Recovery
-BOARD_HAS_NO_SELECT_BUTTON := true
 RECOVERY_SDCARD_ON_DATA := true
 
 # Resolution
-DEVICE_RESOLUTION := 720x1440
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1440
 
 # TWRP
-TARGET_RECOVERY_FSTAB := device/xiaomi/cereus/recovery.fstab
 TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d")
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-RECOVERY_SDCARD_ON_DATA := true
 TW_ALWAYS_RMRF := true
 TW_INCLUDE_CRYPTO := true
 TW_EXCLUDE_SUPERSU := true
@@ -61,9 +56,7 @@ TW_INTERNAL_STORAGE_PATH := "/data/media/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT :="external_sd"
-TW_MTP_DEVICE := /dev/mtp_usb
-TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Vold
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.0/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+

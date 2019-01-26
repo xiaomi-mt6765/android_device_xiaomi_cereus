@@ -16,9 +16,6 @@
 
 ## Specify phone tech before including full_phone
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cereus
 PRODUCT_NAME := full_cereus
