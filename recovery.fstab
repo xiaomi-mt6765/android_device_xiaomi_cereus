@@ -1,4 +1,4 @@
-/system         ext4    /dev/block/platform/bootdevice/by-name/system            flags=backup=1;wipeingui
+/system_root    ext4    /dev/block/platform/bootdevice/by-name/system            flags=display="System",backup=1;wipeingui
 /system_image   emmc    /dev/block/platform/bootdevice/by-name/system            flags=flashimg=1
 /vendor         ext4    /dev/block/platform/bootdevice/by-name/vendor            flags=display="Vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/platform/bootdevice/by-name/vendor            flags=display="Vendor Image";backup=1;flashimg=1
@@ -12,4 +12,3 @@
 
 /external_sd    auto    /dev/block/mmcblk1p1            /dev/block/mmcblk1       flags=display="External SDcard";storage;wipeingui;removable;backup=0
 /usbotg         auto    /dev/block/sda1                 /dev/block/sda           flags=display="Usb-Otg";storage;removable;backup=0
-

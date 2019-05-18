@@ -1,6 +1,9 @@
 on init
     setprop sys.usb.controller musb-hdrc
 
+on fs
+    export ANDROID_ROOT /system_root
+
 on property:ro.mtk_emmc_support=1
     # Support A/B feature for emmc boot region
     symlink /dev/block/mmcblk0boot0 /dev/block/platform/bootdevice/by-name/preloader_a
