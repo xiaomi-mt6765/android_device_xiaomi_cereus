@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-ifneq ($(filter cactus,$(TARGET_DEVICE)),)
+ifneq ($(filter cereus,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
