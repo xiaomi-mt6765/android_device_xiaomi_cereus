@@ -4,7 +4,7 @@
 DEVICE_PATH := device/xiaomi/cereus
 
 # Board
-#TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Kernel
 TARGET_KERNEL_CONFIG := cereus_defconfig
