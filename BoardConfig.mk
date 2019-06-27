@@ -40,6 +40,9 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive an
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
 TARGET_PREBUILT_KERNEL := device/xiaomi/cereus/prebuilt/kernel
 
+# Recovery
+RECOVERY_SDCARD_ON_DATA := true
+
 # Resolution
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1440
@@ -47,10 +50,13 @@ TARGET_SCREEN_HEIGHT := 1440
 # TWRP
 TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d")
 TW_ALWAYS_RMRF := true
+TW_INCLUDE_CRYPTO := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_TWRPAPP := true
-TW_CRYPTO_USE_SYSTEM_VOLD := hwservicemanager teei_daemon keymaster-3-0
-TW_INCLUDE_CRYPTO := true
+TW_INTERNAL_STORAGE_PATH := "/data/media/0"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT :="external_sd"
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file

@@ -22,13 +22,3 @@ PRODUCT_NAME := full_cereus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6
 PRODUCT_MANUFACTURER := Xiaomi
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.secure=1 \
-    ro.adb.secure=0 \
-    ro.allow.mock.location=0
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=cereus \
-    BUILD_PRODUCT=cereus \
-    TARGET_DEVICE=cereus
