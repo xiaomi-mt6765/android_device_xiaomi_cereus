@@ -7,8 +7,7 @@ DEVICE_PATH := device/xiaomi/cereus
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Kernel
-# TARGET_KERNEL_CONFIG := cereus_defconfig
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_KERNEL_CONFIG := cereus_defconfig
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := cereus
