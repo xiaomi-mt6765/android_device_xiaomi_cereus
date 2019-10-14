@@ -13,8 +13,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Override fingerprint from stock
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cereus-user 9 PPR1.180610.011 9.5.23 release-keys" \
+    PRIVATE_BUILD_DESC="cereus-user 9 PPR1.180610.011 V10.4.4.0.PCGMIXM release-keys" \
     PRODUCT_NAME="cereus" \
     TARGET_DEVICE="cereus"
 
-BUILD_FINGERPRINT := xiaomi/cereus/cereus:9/PPR1.180610.011/9.5.23:user/release-keys
+BUILD_FINGERPRINT := xiaomi/cereus/cereus:9/PPR1.180610.011/V10.4.4.0.PCGMIXM:user/release-keys
