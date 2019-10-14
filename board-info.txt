@@ -1,3 +1,1 @@
-require version-modem=2019-09-27 17:45:21
 require version-vendor=1569581121,28
-require version-miui=10.4.4
