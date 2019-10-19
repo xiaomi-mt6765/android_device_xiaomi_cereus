@@ -59,6 +59,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 RECOVERY_SDCARD_ON_DATA := true
 
 # TWRP
+TW_EXTRA_LANGUAGES := true
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
