@@ -17,6 +17,10 @@
 # Inherit common device config
 $(call inherit-product, device/xiaomi/mt6765-common/mt6765.mk)
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/kernel:kernel
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
@@ -26,4 +30,3 @@ $(call inherit-product, vendor/xiaomi/cereus/cereus-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-

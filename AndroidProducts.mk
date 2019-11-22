@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cereus.mk
+    $(LOCAL_DIR)/aosp_cereus.mk
