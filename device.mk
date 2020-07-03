@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
 # Inherit proprietary parts
-$(call inherit-product, vendor/xiaomi/cereus/cereus-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/cereus/cereus-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
