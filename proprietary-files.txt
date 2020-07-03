@@ -1,4 +1,1 @@
 # Proprietary files for cereus
-
-# RIL
-vendor/lib/libmtk-ril.so:product/vendor_overlay/28/lib/libmtk-ril.so|6a5471dd413e1f980668ae9bad0db9b3234dcdd4
